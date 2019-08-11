@@ -38,7 +38,7 @@ steps:
 
 
 - script: |
-    npm run X-postinstall
+    npm run X-postinstall --verbose 
   displayName: 'post'
 
 - script: |
