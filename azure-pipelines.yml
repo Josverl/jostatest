@@ -31,6 +31,12 @@ steps:
     npm test
   displayName: 'npm test'
 
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'XUnit'
+    testResultsFiles: '**/TEST-*.xml'
+    mergeTestResults: true
+    displayName: 'Publish Test results'
 
 - script: |
     npm run package
