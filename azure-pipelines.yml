@@ -16,9 +16,17 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm ci
-  displayName: 'npm ci'
+    npm install
+  displayName: 'npm install'
 
 - script: |
     npm run build
+  displayName: 'npm build'
+
+- script: |
+    npm run package-prep
+  displayName: 'npm prepare for vscode package'
+
+- script: |
+    npm run package
   displayName: 'npm package'
