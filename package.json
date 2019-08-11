@@ -16,7 +16,10 @@
     "package-prep": "npm install vsce -g",
     "package": "vsce package",
     "vscode:prepublish": "npm ci && npm prune",
-    "power": "pwsh -command {write-host -f green Hoi}"
+    "power": "pwsh -command {write-host -f green Hoi}",
+    
+    "hello1": "pwsh ./scripts/hello1.ps1",
+    "hello2": "pwsh hello2.ps1"
   },
   "author": "Jos Verlinde",
   "license": "MIT",
