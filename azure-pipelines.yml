@@ -27,17 +27,24 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-- script: |
-    npm install pwsh -g
-  displayName: 'npm install pwsh'
+# does not help 
+# - script: |
+#     npm install pwsh -g
+#   displayName: 'npm install pwsh'
 
 - script: |
     npm install
   displayName: 'npm install'
 
+
+- script: |
+    npm run X-postinstall
+  displayName: 'post'
+
 - script: |
     npm run hello1
-    npm run hello2
+  displayName: 'hello 1'
+
 
 
 - script: |
