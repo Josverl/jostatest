@@ -12,7 +12,7 @@
     "get-binaries": "pwsh scripts/mp-download.ps1",
     "postinstall": "pwsh scripts/copy-native.ps1",
     "build": "pwsh -command {write-host -f green 'insert typescript/babel transpiler here'}",
-    "test": "mocha -R xunit",
+    "test": "mocha -R xunit 2>&1 | tee test/report.xml ",
     "package-prep": "npm install vsce -g",
     "package": "vsce package",
     "vscode:prepublish": "npm ci && npm prune",
