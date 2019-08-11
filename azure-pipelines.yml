@@ -42,7 +42,7 @@ steps:
     npx pwsh 
     npx pwsh hello2.ps1
     npx pwsh scripts/hello1.ps1
-  displayName: 'pwsh info'
+    displayName: 'pwsh info'
 
 - script: |
     npm run X-postinstall --verbose 
