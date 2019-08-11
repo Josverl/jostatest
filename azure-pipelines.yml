@@ -38,11 +38,11 @@ steps:
   displayName: 'npm install'
 
   - script: |
-    npx pwsh --version
-    npx pwsh 
-    npx pwsh hello2.ps1
-    npx pwsh scripts/hello1.ps1
-  displayName: 'pwsh info'
+      npx pwsh --version
+      npx pwsh 
+      npx pwsh hello2.ps1
+      npx pwsh scripts/hello1.ps1
+    displayName: 'pwsh info'
 
 - script: |
     npm run X-postinstall --verbose 
