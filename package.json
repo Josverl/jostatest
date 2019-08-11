@@ -4,9 +4,12 @@
   "description": "testing pwsh and npm ",
   "main": "index.js",
   "scripts": {
-    "postinstall": "pwsh scripts/copy-native.ps1",
     "get-binaries": "pwsh scripts/mp-download.ps1",
+    "postinstall": "pwsh scripts/copy-native.ps1",
+    "build": "pwsh -command {write-host -f green 'insert typescript/babel transpiler here'}",
     "test": "mocha",
+    "package-prep": "npm ci && npm prune --production && npm install vsce -g",
+    "package": "vsce -package",
     "power": "pwsh -command {write-host -f green Hoi}"
   },
   "author": "Jos Verlinde",
@@ -21,6 +24,7 @@
     "should": "^13.2.3"
   },
   "dependencies": {
-    "serialport": "^7.1.5"
+    "serialport": "^7.1.5",
+    "vsce": "^1.66.0"
   }
 }
