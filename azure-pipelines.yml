@@ -31,7 +31,7 @@ steps:
   displayName: 'install pwsh'
 
 - script: |
-    npm script hello1
+    npm run hello1
   displayName: 'run script'
 
 
