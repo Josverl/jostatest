@@ -38,13 +38,6 @@ steps:
     npx pwsh scripts/hello1.ps1
   displayName: 'pwsh info'
 
-- script: |
-    npm run X-postinstall --verbose 
-  displayName: 'post'
-
-
-
-
 
 - script: |
     npm run build
