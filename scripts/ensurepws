@@ -1,0 +1,9 @@
+#!/bin/bash
+#try 
+pwsh --version
+if [ $? -eq 0 ]
+then
+  echo "pwsh already installed"
+else
+  npm install pwsh -g
+fi
