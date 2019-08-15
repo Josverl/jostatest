@@ -5,5 +5,5 @@ if [ $? -eq 0 ]
 then
   echo "pwsh already installed"
 else
-  npm install pwsh -g
+  # npm install pwsh -g
 fi
